@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sqlink.Common\sqlink.Common.csproj" />
+    <ProjectReference Include="..\sqlink.DAL\sqlink.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

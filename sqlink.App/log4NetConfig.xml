@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<log4net debug="true">
+  <appender name="LogFileAppender" type="log4net.Appender.RollingFileAppender" >
+    <param name="File" value="Log.txt" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock"/>
+    <appendToFile value="true" />
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="3" />
+    <maximumFileSize value="3MB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <param name="ConversionPattern" value="%date [%thread] %-10level %M (%ogger) %newline %message %newline" />
+    </layout>
+  </appender>
+  <root>
+    <level value="DEBUG" />
+    <appender-ref ref="LogFileAppender" />
+  </root>
+</log4net>
